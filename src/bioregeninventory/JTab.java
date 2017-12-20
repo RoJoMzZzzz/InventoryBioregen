@@ -120,16 +120,16 @@ public class JTab extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         partnum = new javax.swing.JTextField();
         desc = new javax.swing.JTextField();
-        price = new javax.swing.JTextField();
         remarks = new javax.swing.JTextField();
-        quantity = new javax.swing.JTextField();
         total = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        rate = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         clear = new javax.swing.JButton();
         compute = new javax.swing.JButton();
+        quantity = new javax.swing.JFormattedTextField();
+        price = new javax.swing.JFormattedTextField();
+        rate = new javax.swing.JFormattedTextField();
         jLabel11 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
@@ -460,7 +460,7 @@ public class JTab extends javax.swing.JFrame {
                 .addGap(245, 245, 245))
         );
 
-        jTabbedPane2.addTab("Users Option", jpUsers);
+        jTabbedPane2.addTab("User Options", jpUsers);
 
         jPanel3.setBackground(new java.awt.Color(0, 255, 102));
 
@@ -489,53 +489,9 @@ public class JTab extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel8.setText("TOTAL");
 
-        price.setForeground(new java.awt.Color(102, 102, 102));
-        price.setText("Please Enter Numbers Only");
-        price.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                priceFocusGained(evt);
-            }
-        });
-        price.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                priceActionPerformed(evt);
-            }
-        });
-        price.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                priceKeyPressed(evt);
-            }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                priceKeyReleased(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                priceKeyTyped(evt);
-            }
-        });
-
         remarks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 remarksActionPerformed(evt);
-            }
-        });
-
-        quantity.setForeground(new java.awt.Color(102, 102, 102));
-        quantity.setText("Please Enter Numbers Only");
-        quantity.setToolTipText("Please Enter Numbers Only");
-        quantity.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                quantityFocusGained(evt);
-            }
-        });
-        quantity.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                quantityKeyPressed(evt);
-            }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                quantityKeyReleased(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                quantityKeyTyped(evt);
             }
         });
 
@@ -545,25 +501,6 @@ public class JTab extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         jLabel9.setText("Quantity:");
-
-        rate.setForeground(new java.awt.Color(102, 102, 102));
-        rate.setText("Please Enter Numbers Only");
-        rate.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                rateFocusGained(evt);
-            }
-        });
-        rate.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                rateKeyPressed(evt);
-            }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                rateKeyReleased(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                rateKeyTyped(evt);
-            }
-        });
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel14.setText("Php");
@@ -621,6 +558,63 @@ public class JTab extends javax.swing.JFrame {
             .addComponent(compute, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        quantity.setForeground(new java.awt.Color(102, 102, 102));
+        quantity.setText("Please Enter Numbers Only");
+        quantity.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                quantityFocusGained(evt);
+            }
+        });
+        quantity.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                quantityKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                quantityKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                quantityKeyTyped(evt);
+            }
+        });
+
+        price.setForeground(new java.awt.Color(102, 102, 102));
+        price.setText("Please Enter Numbers Only");
+        price.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                priceFocusGained(evt);
+            }
+        });
+        price.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                priceKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                priceKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                priceKeyTyped(evt);
+            }
+        });
+
+        rate.setForeground(new java.awt.Color(102, 102, 102));
+        rate.setText("Please Enter Numbers Only");
+        rate.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                rateFocusGained(evt);
+            }
+        });
+        rate.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                rateKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                rateKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                rateKeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
@@ -628,24 +622,34 @@ public class JTab extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addContainerGap(42, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel9)
+                        .addGap(48, 48, 48))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel12Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel12Layout.createSequentialGroup()
                                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
                                     .addComponent(jLabel3)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(rate, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                                    .addComponent(price)
-                                    .addComponent(partnum, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(desc, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                    .addComponent(desc, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(price, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+                                    .addComponent(rate)
+                                    .addComponent(partnum)))
                             .addGroup(jPanel12Layout.createSequentialGroup()
                                 .addComponent(remarks, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(18, 18, 18)
+                                .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel14)
@@ -656,16 +660,6 @@ public class JTab extends javax.swing.JFrame {
                                 .addComponent(jLabel8))
                             .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel9)
-                .addGap(54, 54, 54))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
@@ -679,27 +673,30 @@ public class JTab extends javax.swing.JFrame {
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(desc, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(23, 23, 23)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(rate, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(remarks, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5)
+                    .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel6)
+                    .addComponent(rate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(remarks, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel9))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)))
                 .addComponent(jLabel8)
                 .addGap(32, 32, 32)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1048,21 +1045,21 @@ public class JTab extends javax.swing.JFrame {
     private void computeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_computeActionPerformed
        
     
-        double a1,a2,result;
-        int a3;
+        double a1,a2,a3,result;
+        
         //String t = " ";
         a1=Double.parseDouble(price.getText());
         a2=Double.parseDouble(rate.getText());
-        a3=Integer.parseInt(quantity.getText());
+        a3=Double.parseDouble(quantity.getText());
         
         if((a1 != 0)&&(a2 != 0)&&(a3 != 0)){
           result = (a1*a2)*a3;
-          total.setText("Php"+String.valueOf(result));    
+          total.setText(String.valueOf(result));    
         }else if((a1 != 0)&&(a2 != 0)) {
           result = a1*a2;
-          total.setText("Php. "+String.valueOf(result));  
+          total.setText(String.valueOf(result));  
         }else{
-            total.setText("$"+String.valueOf(a1*a3));
+            total.setText(String.valueOf(a1*a3));
             
         }
          
@@ -1108,97 +1105,7 @@ public class JTab extends javax.swing.JFrame {
         }    
     }
     }//GEN-LAST:event_deleteActionPerformed
-
-    private void quantityKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyPressed
-    if(quantity.getForeground()!= Color.BLACK) 
-        {if(quantity.getText().equals("Please Enter Numbers Only"))
-        {quantity.setText("");   
-            }
-         
-        }
-        quantity.setForeground(Color.BLACK);
-    }//GEN-LAST:event_quantityKeyPressed
-
-    private void quantityKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyTyped
-     char vchar = evt.getKeyChar();
-     if (!(Character.isDigit(vchar))||(vchar == KeyEvent.VK_BACKSPACE)||(vchar == KeyEvent.VK_DELETE)){
-         evt.consume();   
-     }
-    }//GEN-LAST:event_quantityKeyTyped
-
-    private void quantityFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_quantityFocusGained
-     quantity.setCaretPosition(0);
-    }//GEN-LAST:event_quantityFocusGained
-
-    private void quantityKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyReleased
-     if(quantity.getText().isEmpty()==true){
-         quantity.setText("Please Enter Numbers Only");
-         quantity.setCaretPosition(0);
-         quantity.setForeground(new java.awt.Color(102,102,102));
-         
-     }
-    }//GEN-LAST:event_quantityKeyReleased
-
-    private void priceKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyPressed
-       if(price.getForeground()!= Color.BLACK) 
-        {if(price.getText().equals("Please Enter Numbers Only"))
-        {price.setText("");   
-            }
-         
-        }
-        price.setForeground(Color.BLACK);
-    }//GEN-LAST:event_priceKeyPressed
-
-    private void priceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyTyped
-     char vchar = evt.getKeyChar();
-     if (!(Character.isDigit(vchar))||(vchar == KeyEvent.VK_BACKSPACE)||(vchar == KeyEvent.VK_DELETE)){
-         evt.consume();   
-     }
-    }//GEN-LAST:event_priceKeyTyped
-
-    private void priceKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyReleased
-     if(price.getText().isEmpty()==true){
-         price.setText("Please Enter Numbers Only");
-         price.setCaretPosition(0);
-         price.setForeground(new java.awt.Color(102,102,102));
-         
-     }
-    }//GEN-LAST:event_priceKeyReleased
-
-    private void rateKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rateKeyPressed
-    if(rate.getForeground()!= Color.BLACK) 
-        {if(rate.getText().equals("Please Enter Numbers Only"))
-        {rate.setText("");   
-            }
-         
-        }
-        rate.setForeground(Color.BLACK);
-    }//GEN-LAST:event_rateKeyPressed
-
-    private void rateKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rateKeyTyped
-    char vchar = evt.getKeyChar();
-     if (!(Character.isDigit(vchar))||(vchar == KeyEvent.VK_BACKSPACE)||(vchar == KeyEvent.VK_DELETE)){
-         evt.consume();   
-     }
-    }//GEN-LAST:event_rateKeyTyped
-
-    private void rateKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rateKeyReleased
-     if(rate.getText().isEmpty()==true){
-         rate.setText("Please Enter Numbers Only");
-         rate.setCaretPosition(0);
-         rate.setForeground(new java.awt.Color(102,102,102));
-         
-     }
-    }//GEN-LAST:event_rateKeyReleased
-
-    private void priceFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_priceFocusGained
-        price.setCaretPosition(0);
-    }//GEN-LAST:event_priceFocusGained
-
-    private void rateFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_rateFocusGained
-        rate.setCaretPosition(0);
-    }//GEN-LAST:event_rateFocusGained
-
+    
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
        clearText();
     }//GEN-LAST:event_clearActionPerformed
@@ -1265,10 +1172,6 @@ public class JTab extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_addActionPerformed
-
-    private void priceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_priceActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_priceActionPerformed
 
     private void remarksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_remarksActionPerformed
         // TODO add your handling code here:
@@ -1418,6 +1321,99 @@ public class JTab extends javax.swing.JFrame {
                 System.err.format("Cannot print ", e.getMessage());
             }
     }//GEN-LAST:event_printActionPerformed
+
+    private void quantityKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyTyped
+     char c;
+        c = evt.getKeyChar();
+        if (Character.isLetter(c)&&!evt.isAltDown()){
+            evt.consume();
+        }
+    }//GEN-LAST:event_quantityKeyTyped
+
+    private void quantityKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyPressed
+      if(quantity.getForeground()!= Color.BLACK) 
+        {if(quantity.getText().equals("Please Enter Numbers Only"))
+        {quantity.setText("");   
+            }
+         
+        }
+        quantity.setForeground(Color.BLACK);
+    }//GEN-LAST:event_quantityKeyPressed
+
+    private void quantityKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyReleased
+    if(quantity.getText().isEmpty()==true){
+         quantity.setText("Please Enter Numbers Only");
+         quantity.setCaretPosition(0);
+         quantity.setForeground(new java.awt.Color(102,102,102));
+         
+     }
+    }//GEN-LAST:event_quantityKeyReleased
+
+    private void quantityFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_quantityFocusGained
+     quantity.setCaretPosition(0);
+    }//GEN-LAST:event_quantityFocusGained
+
+    private void priceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyTyped
+     char c;
+        c = evt.getKeyChar();
+        if (Character.isLetter(c)&&!evt.isAltDown()){
+            evt.consume();
+        }
+    }//GEN-LAST:event_priceKeyTyped
+
+    private void priceKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyPressed
+     if(price.getForeground()!= Color.BLACK) 
+        {if(price.getText().equals("Please Enter Numbers Only"))
+        {price.setText("");   
+            }
+         
+        }
+        price.setForeground(Color.BLACK);
+    }//GEN-LAST:event_priceKeyPressed
+
+    private void priceKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyReleased
+    if(price.getText().isEmpty()==true){
+         price.setText("Please Enter Numbers Only");
+         price.setCaretPosition(0);
+         price.setForeground(new java.awt.Color(102,102,102));
+         
+     }
+    }//GEN-LAST:event_priceKeyReleased
+
+    private void priceFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_priceFocusGained
+     price.setCaretPosition(0);
+    }//GEN-LAST:event_priceFocusGained
+
+    private void rateKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rateKeyTyped
+     char c;
+        c = evt.getKeyChar();
+        if (Character.isLetter(c)&&!evt.isAltDown()){
+            evt.consume();
+        }
+    }//GEN-LAST:event_rateKeyTyped
+
+    private void rateKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rateKeyPressed
+     if(rate.getForeground()!= Color.BLACK) 
+        {if(rate.getText().equals("Please Enter Numbers Only"))
+        {rate.setText("");   
+            }
+         
+        }
+        rate.setForeground(Color.BLACK);
+    }//GEN-LAST:event_rateKeyPressed
+
+    private void rateKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rateKeyReleased
+     if(rate.getText().isEmpty()==true){
+         rate.setText("Please Enter Numbers Only");
+         rate.setCaretPosition(0);
+         rate.setForeground(new java.awt.Color(102,102,102));
+         
+     }
+    }//GEN-LAST:event_rateKeyReleased
+
+    private void rateFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_rateFocusGained
+      rate.setCaretPosition(0);
+    }//GEN-LAST:event_rateFocusGained
     
     /**
      * @param args the command line arguments
@@ -1503,10 +1499,10 @@ public class JTab extends javax.swing.JFrame {
     private java.awt.Label label3;
     private java.awt.Label label4;
     private javax.swing.JTextField partnum;
-    private javax.swing.JTextField price;
+    private javax.swing.JFormattedTextField price;
     private javax.swing.JButton print;
-    private javax.swing.JTextField quantity;
-    private javax.swing.JTextField rate;
+    private javax.swing.JFormattedTextField quantity;
+    private javax.swing.JFormattedTextField rate;
     private javax.swing.JTextField remarks;
     private javax.swing.JTextField search;
     private javax.swing.JTable tblUSERS;
