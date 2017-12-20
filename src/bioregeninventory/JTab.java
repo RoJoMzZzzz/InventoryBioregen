@@ -1055,7 +1055,7 @@ public class JTab extends javax.swing.JFrame {
         if((a1 != 0)&&(a2 != 0)&&(a3 != 0)){
           result = (a1*a2)*a3;
           total.setText(String.valueOf(result));    
-        }else if((a1 != 0)&&(a2 != 0)) {
+        }else if((a1 != 0)&&(a2 != 0)){
           result = a1*a2;
           total.setText(String.valueOf(result));  
         }else{
