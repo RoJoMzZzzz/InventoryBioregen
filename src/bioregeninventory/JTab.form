@@ -87,6 +87,11 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="ff" red="0" type="rgb"/>
                 </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder bevelType="1"/>
+                  </Border>
+                </Property>
                 <Property name="autoscrolls" type="boolean" value="true"/>
               </Properties>
               <Constraints>
@@ -116,11 +121,11 @@
                               <Group type="102" attributes="0">
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtSearch" min="-2" pref="522" max="-2" attributes="0"/>
+                                  <Component id="txtSearch" min="-2" pref="504" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jPanel9" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="317" max="32767" attributes="0"/>
+                          <EmptySpace pref="331" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -134,9 +139,9 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtSearch" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtSearch" min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel9" max="32767" attributes="0"/>
@@ -168,15 +173,14 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jPanel8" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
                               <Component id="jPanel8" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -204,20 +208,23 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jPanel11" alignment="1" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="label2" min="-2" max="-2" attributes="0"/>
-                                              <Component id="label1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="label3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="label4" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jPanel5" alignment="1" max="32767" attributes="0"/>
-                                              <Component id="txtEName" max="32767" attributes="0"/>
-                                              <Component id="txtEPass" max="32767" attributes="0"/>
-                                              <Component id="txtEId" max="32767" attributes="0"/>
-                                              <Component id="txtPos" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="label1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="label2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="label3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="label4" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="txtEId" alignment="1" pref="188" max="32767" attributes="0"/>
+                                              <Component id="txtEPass" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="txtEName" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="txtPos" alignment="1" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -233,7 +240,7 @@
                                       <Component id="txtEId" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="txtEPass" min="-2" pref="29" max="-2" attributes="0"/>
                                       <Component id="label2" min="-2" max="-2" attributes="0"/>
                                   </Group>
@@ -247,9 +254,9 @@
                                       <Component id="label4" min="-2" max="-2" attributes="0"/>
                                       <Component id="txtPos" min="-2" pref="31" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                                   <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   <Component id="jPanel11" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
@@ -294,21 +301,33 @@
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtEId">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="Enter Employee ID"/>
+                          </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEIdActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtPos">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="Employee Position"/>
+                          </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPosActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JTextField" name="txtEName">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="Fill Complete Name"/>
+                          </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtENameActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JPasswordField" name="txtEPass">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="Password"/>
+                          </Properties>
                         </Component>
                         <Container class="javax.swing.JPanel" name="jPanel11">
                           <Properties>
@@ -326,21 +345,23 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                      <EmptySpace pref="39" max="32767" attributes="0"/>
                                       <Component id="btnADD" min="-2" pref="65" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                                       <Component id="btnUPDATE" min="-2" pref="65" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                       <Component id="btnDELETE" min="-2" pref="65" max="-2" attributes="0"/>
-                                      <EmptySpace pref="33" max="32767" attributes="0"/>
+                                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnUPDATE" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
                                   <Component id="btnDELETE" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnADD" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Component id="btnADD" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnUPDATE" min="-2" pref="58" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
@@ -350,6 +371,7 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/bioregeninventorysystem/icons/add1.png"/>
                                 </Property>
+                                <Property name="toolTipText" type="java.lang.String" value="ADD"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                                 <Property name="horizontalTextPosition" type="int" value="0"/>
                                 <Property name="iconTextGap" type="int" value="0"/>
@@ -363,6 +385,7 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/bioregeninventorysystem/icons/update1.png"/>
                                 </Property>
+                                <Property name="toolTipText" type="java.lang.String" value="UPDATE"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                               </Properties>
                               <Events>
@@ -374,6 +397,7 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/bioregeninventorysystem/icons/delete1.png"/>
                                 </Property>
+                                <Property name="toolTipText" type="java.lang.String" value="DELETE"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                               </Properties>
                               <Events>
@@ -397,18 +421,12 @@
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="print" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="clear1" min="-2" pref="60" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="clear1" alignment="0" pref="56" max="32767" attributes="0"/>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="clear1" alignment="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="print" alignment="1" pref="50" max="32767" attributes="0"/>
+                                  <Component id="clear1" alignment="0" pref="50" max="32767" attributes="0"/>
                               </Group>
                             </DimensionLayout>
                           </Layout>
@@ -418,18 +436,11 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/bioregeninventorysystem/icons/clear.png"/>
                                 </Property>
+                                <Property name="toolTipText" type="java.lang.String" value="Clear Field"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                               </Properties>
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clear1ActionPerformed"/>
-                              </Events>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="print">
-                              <Properties>
-                                <Property name="text" type="java.lang.String" value="PRINT"/>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="printActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
@@ -447,6 +458,7 @@
                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                         <TitledBorder title="Lists of Users">
                           <Font PropertyName="font" name="Tw Cen MT Condensed Extra Bold" size="24" style="1"/>
+                          <Color PropertyName="color" blue="99" green="0" red="33" type="rgb"/>
                         </TitledBorder>
                       </Border>
                     </Property>
@@ -456,10 +468,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jPanel10" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jPanel10" alignment="1" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -492,7 +501,7 @@
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jScrollPane1" alignment="0" pref="949" max="32767" attributes="0"/>
+                              <Component id="jScrollPane1" alignment="0" pref="957" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                       </Layout>
@@ -557,6 +566,7 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="ff" red="cc" type="rgb"/>
                     </Property>
+                    <Property name="toolTipText" type="java.lang.String" value="Search User"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSearchActionPerformed"/>
@@ -579,6 +589,7 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel2">
                   <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/bioregeninventorysystem/icons/logo.png"/>
                     </Property>
@@ -590,6 +601,11 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="ff" red="0" type="rgb"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder bevelType="1"/>
+                  </Border>
                 </Property>
               </Properties>
               <Constraints>
@@ -623,7 +639,7 @@
                               </Group>
                               <Component id="jPanel13" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="320" max="32767" attributes="0"/>
+                          <EmptySpace pref="316" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -635,10 +651,10 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="search" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="search" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jPanel13" max="32767" attributes="0"/>
+                                  <Component id="jPanel13" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel11" min="-2" pref="161" max="-2" attributes="0"/>
@@ -714,54 +730,34 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jPanel6" max="32767" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                      </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="desc" alignment="1" max="32767" attributes="0"/>
-                                                      <Component id="price" alignment="0" pref="204" max="32767" attributes="0"/>
-                                                      <Component id="rate" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="partnum" max="32767" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="remarks" min="-2" pref="143" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="quantity" min="-2" pref="163" max="-2" attributes="0"/>
-                                              </Group>
+                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="total" min="-2" pref="74" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="desc" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="price" alignment="0" pref="204" max="32767" attributes="0"/>
+                                              <Component id="rate" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="partnum" max="32767" attributes="0"/>
+                                              <Component id="remarks" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="total" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -788,32 +784,19 @@
                                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rate" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="total" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                              <Component id="jLabel14" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="remarks" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <Component id="quantity" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace pref="56" max="32767" attributes="0"/>
-                                      </Group>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="remarks" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="total" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Component id="jLabel14" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="65" max="32767" attributes="0"/>
                                   <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -856,22 +839,23 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tw Cen MT" size="18" style="1"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="Remarks:"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel8">
-                          <Properties>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tw Cen MT" size="18" style="1"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="TOTAL"/>
+                            <Property name="text" type="java.lang.String" value="UM:"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="partnum">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="Enter Part Number"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="desc">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="Enter Part Description"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JTextField" name="remarks">
+                          <Properties>
+                            <Property name="toolTipText" type="java.lang.String" value="UM/Remarks"/>
+                          </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="remarksActionPerformed"/>
                           </Events>
@@ -879,6 +863,7 @@
                         <Component class="javax.swing.JTextField" name="total">
                           <Properties>
                             <Property name="editable" type="boolean" value="false"/>
+                            <Property name="toolTipText" type="java.lang.String" value="Price Equivalent in Peso"/>
                             <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
@@ -887,18 +872,10 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel9">
-                          <Properties>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tw Cen MT" size="18" style="1"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Quantity:"/>
-                          </Properties>
-                        </Component>
                         <Component class="javax.swing.JLabel" name="jLabel14">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="12" style="1"/>
+                              <Font name="Tahoma" size="18" style="1"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Php"/>
                           </Properties>
@@ -940,6 +917,7 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/bioregeninventorysystem/icons/clear.png"/>
                                 </Property>
+                                <Property name="toolTipText" type="java.lang.String" value="Clear Field"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Default Cursor"/>
@@ -955,7 +933,7 @@
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/bioregeninventorysystem/icons/compute.png"/>
                                 </Property>
-                                <Property name="toolTipText" type="java.lang.String" value="Calculate"/>
+                                <Property name="toolTipText" type="java.lang.String" value="CALCULATE "/>
                                 <Property name="alignmentX" type="float" value="0.5"/>
                                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -980,26 +958,13 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JFormattedTextField" name="quantity">
-                          <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Please Enter Numbers Only"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="quantityFocusGained"/>
-                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="quantityKeyPressed"/>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="quantityKeyReleased"/>
-                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="quantityKeyTyped"/>
-                          </Events>
-                        </Component>
                         <Component class="javax.swing.JFormattedTextField" name="price">
                           <Properties>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="66" green="66" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Please Enter Numbers Only"/>
+                            <Property name="toolTipText" type="java.lang.String" value="Price In Dollar"/>
                           </Properties>
                           <Events>
                             <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="priceFocusGained"/>
@@ -1014,6 +979,7 @@
                               <Color blue="66" green="66" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Please Enter Numbers Only"/>
+                            <Property name="toolTipText" type="java.lang.String" value="Enter Philippine Rate"/>
                           </Properties>
                           <Events>
                             <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="rateFocusGained"/>
@@ -1031,6 +997,7 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="0" red="0" type="rgb"/>
                     </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/bioregeninventorysystem/icons/logo.png"/>
                     </Property>
@@ -1055,7 +1022,6 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanel14" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanel15" min="-2" pref="87" max="-2" attributes="0"/>
@@ -1206,6 +1172,7 @@
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/bioregeninventorysystem/icons/add1.png"/>
                             </Property>
+                            <Property name="toolTipText" type="java.lang.String" value="ADD"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                             <Property name="iconTextGap" type="int" value="0"/>
                           </Properties>
@@ -1218,6 +1185,7 @@
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/bioregeninventorysystem/icons/update1.png"/>
                             </Property>
+                            <Property name="toolTipText" type="java.lang.String" value="UPDATE"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                           </Properties>
                           <Events>
@@ -1229,6 +1197,7 @@
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/bioregeninventorysystem/icons/delete1.png"/>
                             </Property>
+                            <Property name="toolTipText" type="java.lang.String" value="DELETE"/>
                             <Property name="contentAreaFilled" type="boolean" value="false"/>
                           </Properties>
                           <Events>
@@ -1244,6 +1213,7 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="ff" red="cc" type="rgb"/>
                     </Property>
+                    <Property name="toolTipText" type="java.lang.String" value="Search Spare Parts"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchActionPerformed"/>
@@ -1268,6 +1238,11 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="ff" red="0" type="rgb"/>
                 </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder bevelType="1"/>
+                  </Border>
+                </Property>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
@@ -1280,30 +1255,118 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
-                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1082" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel12" min="-2" pref="158" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="1155" max="32767" attributes="0"/>
+                          <Component id="jTabbedPane1" min="-2" pref="705" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="616" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel12">
+                <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
                   <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bioregeninventorysystem/icons/logo.png"/>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="ff" red="0" type="rgb"/>
                     </Property>
                   </Properties>
-                </Component>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanel19">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="tab4">
+                            <Property name="tabTitle" type="java.lang.String" value="tab4"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="1376" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="677" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel18">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="tab3">
+                            <Property name="tabTitle" type="java.lang.String" value="tab3"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="1376" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="677" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel17">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="tab2">
+                            <Property name="tabTitle" type="java.lang.String" value="tab2"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="1376" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="677" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanel16">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                          <JTabbedPaneConstraints tabName="tab1">
+                            <Property name="tabTitle" type="java.lang.String" value="tab1"/>
+                          </JTabbedPaneConstraints>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="1376" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="677" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
           </SubComponents>

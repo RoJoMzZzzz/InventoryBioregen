@@ -75,7 +75,6 @@ public class JTab extends javax.swing.JFrame {
         price.setText("");
         rate.setText("");
         remarks.setText("");
-        quantity.setText("");
         total.setText("");
     }
     @SuppressWarnings("unchecked")
@@ -101,7 +100,6 @@ public class JTab extends javax.swing.JFrame {
         btnDELETE = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         clear1 = new javax.swing.JButton();
-        print = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -117,17 +115,14 @@ public class JTab extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         partnum = new javax.swing.JTextField();
         desc = new javax.swing.JTextField();
         remarks = new javax.swing.JTextField();
         total = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         clear = new javax.swing.JButton();
         compute = new javax.swing.JButton();
-        quantity = new javax.swing.JFormattedTextField();
         price = new javax.swing.JFormattedTextField();
         rate = new javax.swing.JFormattedTextField();
         jLabel11 = new javax.swing.JLabel();
@@ -142,7 +137,11 @@ public class JTab extends javax.swing.JFrame {
         search = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel19 = new javax.swing.JPanel();
+        jPanel18 = new javax.swing.JPanel();
+        jPanel17 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -158,6 +157,7 @@ public class JTab extends javax.swing.JFrame {
         jTabbedPane2.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 24)); // NOI18N
 
         jpUsers.setBackground(new java.awt.Color(0, 255, 102));
+        jpUsers.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jpUsers.setAutoscrolls(true);
 
         jPanel7.setBackground(new java.awt.Color(102, 255, 102));
@@ -183,28 +183,34 @@ public class JTab extends javax.swing.JFrame {
         label4.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         label4.setText("Position:");
 
+        txtEId.setToolTipText("Enter Employee ID");
         txtEId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEIdActionPerformed(evt);
             }
         });
 
+        txtPos.setToolTipText("Employee Position");
         txtPos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPosActionPerformed(evt);
             }
         });
 
+        txtEName.setToolTipText("Fill Complete Name");
         txtEName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtENameActionPerformed(evt);
             }
         });
 
+        txtEPass.setToolTipText("Password");
+
         jPanel11.setBackground(new java.awt.Color(0, 255, 102));
         jPanel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         btnADD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/add1.png"))); // NOI18N
+        btnADD.setToolTipText("ADD");
         btnADD.setContentAreaFilled(false);
         btnADD.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnADD.setIconTextGap(0);
@@ -215,6 +221,7 @@ public class JTab extends javax.swing.JFrame {
         });
 
         btnUPDATE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/update1.png"))); // NOI18N
+        btnUPDATE.setToolTipText("UPDATE");
         btnUPDATE.setContentAreaFilled(false);
         btnUPDATE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,6 +230,7 @@ public class JTab extends javax.swing.JFrame {
         });
 
         btnDELETE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/delete1.png"))); // NOI18N
+        btnDELETE.setToolTipText("DELETE");
         btnDELETE.setContentAreaFilled(false);
         btnDELETE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,25 +243,27 @@ public class JTab extends javax.swing.JFrame {
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addContainerGap(39, Short.MAX_VALUE)
                 .addComponent(btnADD, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(btnUPDATE, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(27, 27, 27)
                 .addComponent(btnDELETE, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnUPDATE, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(btnDELETE)
-            .addComponent(btnADD)
+            .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(btnADD)
+                .addComponent(btnUPDATE, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel5.setBackground(new java.awt.Color(0, 255, 102));
         jPanel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         clear1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/clear.png"))); // NOI18N
+        clear1.setToolTipText("Clear Field");
         clear1.setContentAreaFilled(false);
         clear1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,27 +271,15 @@ public class JTab extends javax.swing.JFrame {
             }
         });
 
-        print.setText("PRINT");
-        print.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                printActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(print, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(clear1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(clear1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(clear1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(print, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+            .addComponent(clear1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -293,18 +291,20 @@ public class JTab extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(26, 26, 26)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtEName)
-                            .addComponent(txtEPass)
-                            .addComponent(txtEId)
-                            .addComponent(txtPos))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtEId, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
+                            .addComponent(txtEPass, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtEName, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtPos, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
@@ -315,7 +315,7 @@ public class JTab extends javax.swing.JFrame {
                     .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtEId, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtEPass, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
@@ -326,9 +326,9 @@ public class JTab extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtPos, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                .addGap(59, 59, 59)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
+                .addGap(28, 28, 28)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -338,19 +338,18 @@ public class JTab extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 3, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                 .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         jPanel9.setBackground(new java.awt.Color(102, 255, 102));
-        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Lists of Users", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24))); // NOI18N
+        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Lists of Users", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24), new java.awt.Color(51, 0, 153))); // NOI18N
         jPanel9.setFocusCycleRoot(true);
 
         jPanel10.setBackground(new java.awt.Color(0, 255, 102));
@@ -379,16 +378,14 @@ public class JTab extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 949, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 957, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -398,6 +395,7 @@ public class JTab extends javax.swing.JFrame {
         );
 
         txtSearch.setBackground(new java.awt.Color(204, 255, 204));
+        txtSearch.setToolTipText("Search User");
         txtSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchActionPerformed(evt);
@@ -420,6 +418,7 @@ public class JTab extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/search.png"))); // NOI18N
         jLabel1.setText("Search Users");
 
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/logo.png"))); // NOI18N
 
         javax.swing.GroupLayout jpUsersLayout = new javax.swing.GroupLayout(jpUsers);
@@ -439,9 +438,9 @@ public class JTab extends javax.swing.JFrame {
                     .addGroup(jpUsersLayout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 504, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(317, Short.MAX_VALUE))
+                .addContainerGap(331, Short.MAX_VALUE))
         );
         jpUsersLayout.setVerticalGroup(
             jpUsersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,9 +451,9 @@ public class JTab extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jpUsersLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jpUsersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jpUsersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(245, 245, 245))
@@ -463,6 +462,7 @@ public class JTab extends javax.swing.JFrame {
         jTabbedPane2.addTab("User Options", jpUsers);
 
         jPanel3.setBackground(new java.awt.Color(0, 255, 102));
+        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         jPanel2.setBackground(new java.awt.Color(102, 255, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Data Informations", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24), new java.awt.Color(51, 0, 153))); // NOI18N
@@ -484,11 +484,13 @@ public class JTab extends javax.swing.JFrame {
         jLabel6.setText("Peso Rate:");
 
         jLabel7.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel7.setText("Remarks:");
+        jLabel7.setText("UM:");
 
-        jLabel8.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel8.setText("TOTAL");
+        partnum.setToolTipText("Enter Part Number");
 
+        desc.setToolTipText("Enter Part Description");
+
+        remarks.setToolTipText("UM/Remarks");
         remarks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 remarksActionPerformed(evt);
@@ -496,19 +498,18 @@ public class JTab extends javax.swing.JFrame {
         });
 
         total.setEditable(false);
+        total.setToolTipText("Price Equivalent in Peso");
         total.setCaretColor(new java.awt.Color(255, 255, 255));
         total.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
 
-        jLabel9.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        jLabel9.setText("Quantity:");
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel14.setText("Php");
 
         jPanel6.setBackground(new java.awt.Color(0, 255, 102));
         jPanel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
         clear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/clear.png"))); // NOI18N
+        clear.setToolTipText("Clear Field");
         clear.setContentAreaFilled(false);
         clear.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         clear.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -519,7 +520,7 @@ public class JTab extends javax.swing.JFrame {
         });
 
         compute.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/compute.png"))); // NOI18N
-        compute.setToolTipText("Calculate");
+        compute.setToolTipText("CALCULATE ");
         compute.setAlignmentX(0.5F);
         compute.setContentAreaFilled(false);
         compute.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -558,27 +559,9 @@ public class JTab extends javax.swing.JFrame {
             .addComponent(compute, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        quantity.setForeground(new java.awt.Color(102, 102, 102));
-        quantity.setText("Please Enter Numbers Only");
-        quantity.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                quantityFocusGained(evt);
-            }
-        });
-        quantity.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                quantityKeyPressed(evt);
-            }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                quantityKeyReleased(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                quantityKeyTyped(evt);
-            }
-        });
-
         price.setForeground(new java.awt.Color(102, 102, 102));
         price.setText("Please Enter Numbers Only");
+        price.setToolTipText("Price In Dollar");
         price.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 priceFocusGained(evt);
@@ -598,6 +581,7 @@ public class JTab extends javax.swing.JFrame {
 
         rate.setForeground(new java.awt.Color(102, 102, 102));
         rate.setText("Please Enter Numbers Only");
+        rate.setToolTipText("Enter Philippine Rate");
         rate.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 rateFocusGained(evt);
@@ -624,43 +608,29 @@ public class JTab extends javax.swing.JFrame {
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
-                        .addGap(48, 48, 48))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel12Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(desc, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(price, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                                    .addComponent(rate)
-                                    .addComponent(partnum)))
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addComponent(remarks, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel8))
-                            .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(desc, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(price, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+                            .addComponent(rate)
+                            .addComponent(partnum)
+                            .addComponent(remarks))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(74, 74, 74))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -681,26 +651,17 @@ public class JTab extends javax.swing.JFrame {
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(rate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(remarks, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(quantity, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel9))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)))
-                .addComponent(jLabel8)
-                .addGap(32, 32, 32)
+                .addGap(29, 29, 29)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(remarks, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(total, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -720,6 +681,7 @@ public class JTab extends javax.swing.JFrame {
         );
 
         jLabel11.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/logo.png"))); // NOI18N
 
         jPanel13.setBackground(new java.awt.Color(102, 255, 102));
@@ -770,6 +732,7 @@ public class JTab extends javax.swing.JFrame {
         jPanel15.setToolTipText("");
 
         add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/add1.png"))); // NOI18N
+        add.setToolTipText("ADD");
         add.setContentAreaFilled(false);
         add.setIconTextGap(0);
         add.addActionListener(new java.awt.event.ActionListener() {
@@ -779,6 +742,7 @@ public class JTab extends javax.swing.JFrame {
         });
 
         update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/update1.png"))); // NOI18N
+        update.setToolTipText("UPDATE");
         update.setContentAreaFilled(false);
         update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -787,6 +751,7 @@ public class JTab extends javax.swing.JFrame {
         });
 
         delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/delete1.png"))); // NOI18N
+        delete.setToolTipText("DELETE");
         delete.setContentAreaFilled(false);
         delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -823,7 +788,6 @@ public class JTab extends javax.swing.JFrame {
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -837,6 +801,7 @@ public class JTab extends javax.swing.JFrame {
         );
 
         search.setBackground(new java.awt.Color(204, 255, 204));
+        search.setToolTipText("Search Spare Parts");
         search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchActionPerformed(evt);
@@ -871,7 +836,7 @@ public class JTab extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(320, Short.MAX_VALUE))
+                .addContainerGap(316, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -881,9 +846,9 @@ public class JTab extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -894,23 +859,73 @@ public class JTab extends javax.swing.JFrame {
         jTabbedPane2.addTab("Fresenius", jPanel3);
 
         jPanel4.setBackground(new java.awt.Color(0, 255, 102));
+        jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bioregeninventorysystem/icons/logo.png"))); // NOI18N
+        jTabbedPane1.setBackground(new java.awt.Color(0, 255, 102));
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1376, Short.MAX_VALUE)
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 677, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab4", jPanel19);
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1376, Short.MAX_VALUE)
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 677, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab3", jPanel18);
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1376, Short.MAX_VALUE)
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 677, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab2", jPanel17);
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1376, Short.MAX_VALUE)
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 677, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab1", jPanel16);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(jLabel12)
-                .addContainerGap(1082, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1155, Short.MAX_VALUE))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 616, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Technical Reports", jPanel4);
@@ -977,13 +992,12 @@ public class JTab extends javax.swing.JFrame {
         desc.setText(m.getValueAt(frestable.getSelectedRow(), 1).toString());
         price.setText(m.getValueAt(frestable.getSelectedRow(), 2).toString());
         remarks.setText(m.getValueAt(frestable.getSelectedRow(), 3).toString());
-        quantity.setText(m.getValueAt(frestable.getSelectedRow(), 4).toString());
-        total.setText(m.getValueAt(frestable.getSelectedRow(), 5).toString());
+        total.setText(m.getValueAt(frestable.getSelectedRow(), 4).toString());
     }//GEN-LAST:event_frestableMouseClicked
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
     DefaultTableModel model = (DefaultTableModel) frestable.getModel();
-        if((partnum.getText().equals(""))||(desc.getText().equals(""))||(price.getText().equals(""))|(remarks.getText().equals(""))||(quantity.getText().equals(""))||(total.getText().equals(""))){
+        if((partnum.getText().equals(""))||(desc.getText().equals(""))||(price.getText().equals(""))|(remarks.getText().equals(""))||(total.getText().equals(""))){
             JOptionPane.showMessageDialog(null, "Please Complete All of the Fields");
             if(frestable.getSelectedRow()==-1){
             if(frestable.getRowCount()==0){
@@ -1002,11 +1016,10 @@ public class JTab extends javax.swing.JFrame {
             String des = desc.getText();
             String pri = price.getText();
             String mark = remarks.getText();
-            String quan = quantity.getText();
             String tot = total.getText();
                 
             
-            String sql="UPDATE freseniustbl SET Part_Number='"+part+"', Description='"+des+"', Price='"+pri+"',UM='"+mark+"',Quantity='"+quan+"',Total='"+tot+"' WHERE Part_Number='"+part+"'; ";
+            String sql="UPDATE freseniustbl SET Part_Number='"+part+"', Description='"+des+"', Price_Dollars='"+pri+"',UM='"+mark+"',Peso_Equivalent='"+tot+"' WHERE Part_Number='"+part+"'; ";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps = conn.prepareStatement(sql);
             int exit=JOptionPane.showConfirmDialog(null, "Are you sure you want to Update Data?");
@@ -1018,8 +1031,7 @@ public class JTab extends javax.swing.JFrame {
             model.setValueAt(desc.getText(), frestable.getSelectedRow(), 1);
             model.setValueAt(price.getText(), frestable.getSelectedRow(), 2);
             model.setValueAt(remarks.getText(), frestable.getSelectedRow(), 3);
-            model.setValueAt(quantity.getText(), frestable.getSelectedRow(), 4);
-            model.setValueAt(total.getText(), frestable.getSelectedRow(), 5);
+            model.setValueAt(total.getText(), frestable.getSelectedRow(), 4);
             clearText();
             }
             else if (exit==1){
@@ -1040,35 +1052,14 @@ public class JTab extends javax.swing.JFrame {
     private void txtSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchActionPerformed
-
-     
+ 
     private void computeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_computeActionPerformed
-       
     
-        double a1,a2,a3,result;
-        
-        //String t = " ";
-        a1=Double.parseDouble(price.getText());
-        a2=Double.parseDouble(rate.getText());
-        a3=Double.parseDouble(quantity.getText());
-        
-        if((a1 != 0)&&(a2 != 0)&&(a3 != 0)){
-          result = (a1*a2)*a3;
-          total.setText(String.valueOf(result));    
-        }else if((a1 != 0)&&(a2 != 0)){
-          result = a1*a2;
-          total.setText(String.valueOf(result));  
-        }else{
-            total.setText(String.valueOf(a1*a3));
-            
-        }
-         
-//                if(a3 == 0 ){
-//                    JOptionPane.showMessageDialog(null, "Quantity entry is empty or should be number type.");
-//                }else if(quantity.getText() == ""){
-//                    JOptionPane.showMessageDialog(null, "Quantity entry is empty or should be number type.");
-//                }
-                // TODO add your handling code here:
+     double a1 = Double.parseDouble(price.getText());
+     double a2 = Double.parseDouble(rate.getText());
+     double result = a1*a2;
+     total.setText(String.valueOf(result));
+
     }//GEN-LAST:event_computeActionPerformed
 
     private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
@@ -1138,11 +1129,11 @@ public class JTab extends javax.swing.JFrame {
 
 //fresenius Panel
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
-        if((partnum.getText().equals(""))||(desc.getText().equals(""))||(price.getText().equals(""))||(remarks.getText().equals(""))||(quantity.getText().equals(""))||(total.getText().equals(""))){
+        if((partnum.getText().equals(""))||(desc.getText().equals(""))||(price.getText().equals(""))||(remarks.getText().equals(""))||(total.getText().equals(""))){
             JOptionPane.showMessageDialog(null, "Please Complete All of the Fields");
         }
         else{
-            String sql = "Insert into freseniustbl (Part_Number,Description,Price,UM,Quantity,Total) values (?,?,?,?,?,?)";
+            String sql = "Insert into freseniustbl (Part_Number,Description,Price_Dollars,UM,Peso_Equivalent) values (?,?,?,?,?)";
             try {
 
                 PreparedStatement ps = conn.prepareStatement(sql);
@@ -1150,8 +1141,7 @@ public class JTab extends javax.swing.JFrame {
                 ps.setString(2, desc.getText());
                 ps.setString(3, price.getText());
                 ps.setString(4, remarks.getText());
-                ps.setString(5, quantity.getText());
-                ps.setString(6, total.getText());
+                ps.setString(5, total.getText());
                 int exit=JOptionPane.showConfirmDialog(null, "Are you sure you want to Add this Data?");
                 if(exit==0){
                     ps.execute();
@@ -1310,49 +1300,6 @@ public class JTab extends javax.swing.JFrame {
         clearText();
     }//GEN-LAST:event_clear1ActionPerformed
 
-    private void printActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printActionPerformed
-        MessageFormat header = new MessageFormat("Report Print");
-        MessageFormat footer = new MessageFormat("Page{Fresenius,string}");
-            try {
-             tblUSERS.print(JTable.PrintMode.FIT_WIDTH, header, footer, rootPaneCheckingEnabled, null, rootPaneCheckingEnabled, null);
-            
-            }
-            catch (java.awt.print.PrinterException e){
-                System.err.format("Cannot print ", e.getMessage());
-            }
-    }//GEN-LAST:event_printActionPerformed
-
-    private void quantityKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyTyped
-     char c;
-        c = evt.getKeyChar();
-        if (Character.isLetter(c)&&!evt.isAltDown()){
-            evt.consume();
-        }
-    }//GEN-LAST:event_quantityKeyTyped
-
-    private void quantityKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyPressed
-      if(quantity.getForeground()!= Color.BLACK) 
-        {if(quantity.getText().equals("Please Enter Numbers Only"))
-        {quantity.setText("");   
-            }
-         
-        }
-        quantity.setForeground(Color.BLACK);
-    }//GEN-LAST:event_quantityKeyPressed
-
-    private void quantityKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityKeyReleased
-    if(quantity.getText().isEmpty()==true){
-         quantity.setText("Please Enter Numbers Only");
-         quantity.setCaretPosition(0);
-         quantity.setForeground(new java.awt.Color(102,102,102));
-         
-     }
-    }//GEN-LAST:event_quantityKeyReleased
-
-    private void quantityFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_quantityFocusGained
-     quantity.setCaretPosition(0);
-    }//GEN-LAST:event_quantityFocusGained
-
     private void priceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_priceKeyTyped
      char c;
         c = evt.getKeyChar();
@@ -1465,7 +1412,6 @@ public class JTab extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1473,8 +1419,6 @@ public class JTab extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -1482,6 +1426,10 @@ public class JTab extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1492,6 +1440,7 @@ public class JTab extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JPanel jpUsers;
     private java.awt.Label label1;
@@ -1500,8 +1449,6 @@ public class JTab extends javax.swing.JFrame {
     private java.awt.Label label4;
     private javax.swing.JTextField partnum;
     private javax.swing.JFormattedTextField price;
-    private javax.swing.JButton print;
-    private javax.swing.JFormattedTextField quantity;
     private javax.swing.JFormattedTextField rate;
     private javax.swing.JTextField remarks;
     private javax.swing.JTextField search;
