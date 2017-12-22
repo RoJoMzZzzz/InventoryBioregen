@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2017 at 07:27 AM
+-- Generation Time: Dec 21, 2017 at 10:29 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -76,10 +76,9 @@ INSERT INTO `finaltbl` (`Serial_Number`, `Client`, `Place_Installed`, `Number_of
 CREATE TABLE IF NOT EXISTS `freseniustbl` (
   `Part_Number` varchar(30) NOT NULL,
   `Description` varchar(50) NOT NULL,
-  `Price` double NOT NULL,
+  `Price_Dollars` double NOT NULL,
   `UM` varchar(30) NOT NULL,
-  `Quantity` int(50) NOT NULL,
-  `Total` double NOT NULL,
+  `Peso_Equivalent` double NOT NULL,
   PRIMARY KEY (`Part_Number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -87,13 +86,16 @@ CREATE TABLE IF NOT EXISTS `freseniustbl` (
 -- Dumping data for table `freseniustbl`
 --
 
-INSERT INTO `freseniustbl` (`Part_Number`, `Description`, `Price`, `UM`, `Quantity`, `Total`) VALUES
-('105', 'sffs', 20, 'gfsj', 2, 120),
-('112', 'ok', 2, 'ok', 2, 2),
-('114', 'okey', 20, 'ok', 5, 2),
-('123', 'apsre', 90, 'not yet', 0, 0),
-('156', 'Spare', 450, 'EA', 0, 0),
-('200', 'sffs', 89, 'gfsj', 2, 91);
+INSERT INTO `freseniustbl` (`Part_Number`, `Description`, `Price_Dollars`, `UM`, `Peso_Equivalent`) VALUES
+('1023', 'kjhjkgjkjvhnv', 1, 'EA', 50),
+('1024', 'milk', 10, 'EA', 20),
+('105', 'sffs', 20, 'gfsj', 120),
+('1053', 'jgjsgdjsag', 20.57, 'gfsj', 120),
+('112', 'ok', 2, 'ok', 2),
+('114', 'okey', 20, 'ok', 2),
+('123', 'apsre', 90, 'not yet', 0),
+('156', 'Spare', 450, 'EA', 0),
+('200', 'sffs', 89, 'gfsj', 91);
 
 -- --------------------------------------------------------
 
