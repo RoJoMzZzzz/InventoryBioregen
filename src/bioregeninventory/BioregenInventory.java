@@ -23,6 +23,8 @@ public Connection DBConnection;
         catch (ClassNotFoundException cnfe){
             System.out.println("Connection Fail" +cnfe);
         }
+        //Rojom: change localhoost to ipaddress of computer na magiging server nyo na may xampp server
+        // example: String url = "jdbc:mysql://192.168.10.12:3306/Bioregendb";
         String url = "jdbc:mysql://localhost:3306/Bioregendb";
         try {
             DBConnection = (Connection) DriverManager.getConnection(url, "root", "");
